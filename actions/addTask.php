@@ -17,9 +17,9 @@ function addTask ($userInput) {
 
 
   if (count($errors) == 0) {
-
+$_SESSION['tasks'][] = $userInput;
   }
-  $_SESSION['tasks'][] = $userInput;
+
   return $errors;
 }
 
